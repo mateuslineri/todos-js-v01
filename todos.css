@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-image: linear-gradient(567deg, lime, dodgerblue)
+}
+
+
+
+#app {
+    width: 70vw;
+    height: 70vh;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.05);
+    position: absolute;
+    border-radius: 5px;
+    overflow-y: hidden;
+
+}
+
+ul {
+    height: 79.5%;
+    list-style: none;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-items: flex-end;
+    align-items: center;
+    border-bottom: 10px solid rgba(0, 0, 0, 0.2); 
+}
+
+#insert-todo,
+#insert-button {
+    position: absolute;
+    left: 10px;
+    width: 94.5%;
+    border: none;
+    border-radius: 5px;
+}
+
+#insert-todo {
+    bottom: 60px;
+    height: 50px;
+    text-align: center;
+    font-size: 1rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#insert-button {
+    bottom: 10px;
+    height: 40px;
+    background-color: rgba(0, 143, 187, 0.4);
+    color: #fff;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+#insert-button:hover {
+    background-color: rgba(1, 233, 20, 0.1);
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.1);
+}
+
+li {
+    color: white;
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.2));
+    border-radius: 4px;
+    height: 30px;
+    text-align: start;
+    vertical-align: center;
+    padding-left: 8px;
+    padding-top: 8px;
+    font-size: 1rem;
+    position: relative;
+    margin: 5px; 
+    width: 94%;
+}
+
+a { 
+    font-weight: bolder;
+    position: absolute;
+    text-decoration: none;
+    color: rgba(200, 0, 0, 1);
+    border-radius: 25%;
+    text-align: end;
+    margin-top: -33px;
+    margin-left: calc(100% - 30px);
+    padding: 5px;
+    transition: 0.3s;
+}
+
+a:hover { 
+    color: rgba(255, 0, 0, 1);
+}
